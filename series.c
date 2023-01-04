@@ -2,19 +2,20 @@
 #include<math.h>
 int main()
 {
-    int n,x=1,y=1,i,a,b;
+    int n,x=0,y=0,i,a,b;
+    printf("0 ");
     scanf("%d",&n);
-    for(i=1;i<=n+1;i++)
+    for(i=1;i<n;i++)
     {
         if(i%2!=0)
         {
-            a=pow(2,x)-1;
+            a=pow(3,x);
             printf("%d ",a);
             x++;
         }
         else
         {
-            b=pow(3,y)-1;
+            b=pow(2,y);
             printf("%d ",b);
             y++;
         }
